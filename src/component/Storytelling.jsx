@@ -289,7 +289,7 @@ const StorytellingPage = () => {
             title="Nhà nước của dân, do dân và vì dân"
             description="Nhà nước xã hội chủ nghĩa không còn là công cụ duy trì quyền lực của một giai cấp cụ thể mà trở thành tổ chức đại diện cho lợi ích của toàn dân. Quyền lực nhà nước thuộc về nhân dân, thông qua các cơ chế dân chủ và pháp quyền."
             isRight={false}
-            image="https://res.cloudinary.com/monkeysuper/image/upload/v1736880249/wxeeya2dgeouz9m0uv3o.jpg"
+            image="https://res.cloudinary.com/monkeysuper/image/upload/v1736886248/ava5wli3pskxti3yxx9l.jpg"
           />
           <TimelineItem
             title="Phát triển toàn diện con người"
