@@ -209,7 +209,7 @@ const StorytellingPage = () => {
       >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 250 }}
           transition={{ delay: 0.5 }}
           className="text-center"
         >
