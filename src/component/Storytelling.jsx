@@ -50,7 +50,7 @@ const TimelineNav = ({ currentSection }) => {
             onClick={() => scrollToSection(section.id)}
           >
             <div
-              className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
+              className={`w-4 h-2  cursor-pointer transition-all duration-300 ${
                 currentSection === section.id
                   ? "bg-white scale-125"
                   : "bg-white/50 hover:bg-white/80"
@@ -197,14 +197,15 @@ const StorytellingPage = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen snap-y snap-mandatory overflow-y-auto">
+    <div className=" min-h-screen snap-y snap-mandatory overflow-y-auto">
       <TimelineNav currentSection={currentSection} />
       {/* Hero Section */}
       <StorySection
         id="hero"
         bgImage="https://res.cloudinary.com/monkeysuper/image/upload/v1736857857/uufn23xuobxtwanflwp4.jpg"
-        title="Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội"
-        subtitle="Chương 3"
+        // title=""
+        // subtitle="Chương 3"
+        // className=""
       >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -212,20 +213,19 @@ const StorytellingPage = () => {
           transition={{ delay: 0.5 }}
           className="text-center"
         >
-          <div className="inline-flex justify-center items-center border-white/30 border px-6 py-3 hover:bg-white/10 transition-colors rounded-full gap-2">
+          <div className="inline-flex justify-between items-center border-white/30 border px-6 py-3 hover:bg-white/10 transition-colors rounded-full gap-2">
             <button
               onClick={() => scrollToSection("section1")}
-              className="text-white"
+              className="text-white font-medium text-3xl max-w-[80%] text-center"
             >
-              Khám phá
-              {/*  <ArrowRight className="w-4 h-4" /> */}
+              Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội
             </button>
             <BackgroundMusic src="https://res.cloudinary.com/monkeysuper/video/upload/v1736880869/ttqxhtkszvczdxkp99vj.mp3" />
           </div>
         </motion.div>
       </StorySection>
 
-      <TableOfContents scrollToSection={scrollToSection} />
+      {/* <TableOfContents scrollToSection={scrollToSection} /> */}
 
       {/* Section 1: Quan điểm cơ bản */}
       <StorySection
